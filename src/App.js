@@ -29,16 +29,18 @@ function handleSubmit() {
 
   return (
     <div className="container">
-        <h1>File Upload Stefan Dascalescu</h1>
-        <div className="input-group">
+        <h1>File Upload</h1>
+        <form id='form'>
+            <div className="input-group">
                 <label for='name'>Your name</label>
                 <input name='name' id='name' placeholder="Enter your name" />
             </div>
-            <div className="input-group">
+            <div class="input-group">
                 <label for='files'>Select files</label>
                 <input id='files' type="file" onChange={handleChange} />
             </div>
-            <button class="submit-btn" onClick={handleSubmit}>Upload</button>
+            <button className="submit-btn" type='submit' onClick={handleSubmit}>Upload</button>
+        </form>
     </div>
   );
 }
